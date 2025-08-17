@@ -1,0 +1,8 @@
+{
+  "name": "claude-workspace",
+  "private": true,
+  "scripts": {
+    "claude": "npx @anthropic-ai/claude-code start",
+    "claude:init": "npx @anthropic-ai/claude-code init"
+  }
+}

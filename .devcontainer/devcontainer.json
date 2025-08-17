@@ -1,0 +1,18 @@
+{
+  "name": "Claude Dev Code Container",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "runArgs": [
+    "--name=CLAUDE-DEV-CODE"
+  ],
+  "workspaceFolder": "/workspace",
+  "postCreateCommand": "./setup.sh",
+  "forwardPorts": [3000, 8080],
+  "remoteUser": "vscode",
+  "mounts": [
+    "source=${localWorkspaceFolder},target=/workspace,type=bind",
+    "source=${localEnv:HOME}/.gitconfig,target=/home/vscode/.gitconfig,type=bind,readonly",
+    "source=${localEnv:HOME}/.ssh,target=/home/vscode/.ssh,type=bind,readonly"
+  ]
+}

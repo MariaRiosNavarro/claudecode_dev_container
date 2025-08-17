@@ -27,4 +27,4 @@ if [ -f .env ]; then
 fi
 
 echo "✅ Setup complete!"
-echo "🚀 Ready to use: npm run claude:init && npm run claude"
+echo "🚀 Ready to use: npm run claude:init or npm run claude"

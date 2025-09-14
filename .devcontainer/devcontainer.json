@@ -3,9 +3,6 @@
   "build": {
     "dockerfile": "Dockerfile"
   },
-  "runArgs": [
-    "--name=CLAUDE-DEV-CODE"
-  ],
   "workspaceFolder": "/workspace",
   "postCreateCommand": "./setup.sh",
   "forwardPorts": [3000, 8080],
